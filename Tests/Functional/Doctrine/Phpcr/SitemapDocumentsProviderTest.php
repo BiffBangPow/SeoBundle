@@ -37,7 +37,7 @@ class SitemapDocumentsProviderTest extends BaseTestCase
 
     public function testDocumentGeneration()
     {
-        $documents = $this->provider->getDocumentsForSitemap('test');
+        $documents = $this->provider->load('test');
 
         $this->assertCount(3, $documents);
 
